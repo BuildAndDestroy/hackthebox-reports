@@ -1,0 +1,375 @@
+{
+        "name": "Nibbles",
+        "versions": {
+                "attack": "13",
+                "navigator": "4.8.2",
+                "layer": "4.4"
+        },
+        "domain": "enterprise-attack",
+        "description": "HTB - Nibbles Killchain using PowerShell Empire as a C2",
+        "filters": {
+                "platforms": [
+                        "Network",
+                        "Linux",
+                        "PRE"
+                ]
+        },
+        "sorting": 0,
+        "layout": {
+                "layout": "side",
+                "aggregateFunction": "average",
+                "showID": false,
+                "showName": true,
+                "showAggregateScores": false,
+                "countUnscored": false
+        },
+        "hideDisabled": false,
+        "techniques": [
+                {
+                        "techniqueID": "T1592",
+                        "tactic": "reconnaissance",
+                        "color": "",
+                        "comment": "",
+                        "enabled": true,
+                        "metadata": [],
+                        "links": [],
+                        "showSubtechniques": true
+                },
+                {
+                        "techniqueID": "T1592.002",
+                        "tactic": "reconnaissance",
+                        "color": "#74c476",
+                        "comment": "",
+                        "enabled": true,
+                        "metadata": [],
+                        "links": [],
+                        "showSubtechniques": false
+                },
+                {
+                        "techniqueID": "T1053",
+                        "tactic": "persistence",
+                        "color": "",
+                        "comment": "",
+                        "enabled": true,
+                        "metadata": [],
+                        "links": [],
+                        "showSubtechniques": true
+                },
+                {
+                        "techniqueID": "T1053.003",
+                        "tactic": "execution",
+                        "color": "#74c476",
+                        "comment": "",
+                        "enabled": true,
+                        "metadata": [],
+                        "links": [],
+                        "showSubtechniques": false
+                },
+                {
+                        "techniqueID": "T1053.003",
+                        "tactic": "persistence",
+                        "color": "#74c476",
+                        "comment": "",
+                        "enabled": true,
+                        "metadata": [],
+                        "links": [],
+                        "showSubtechniques": false
+                },
+                {
+                        "techniqueID": "T1053.003",
+                        "tactic": "privilege-escalation",
+                        "color": "#74c476",
+                        "comment": "",
+                        "enabled": true,
+                        "metadata": [],
+                        "links": [],
+                        "showSubtechniques": false
+                },
+                {
+                        "techniqueID": "T1190",
+                        "tactic": "initial-access",
+                        "color": "#74c476",
+                        "comment": "",
+                        "enabled": true,
+                        "metadata": [],
+                        "links": [],
+                        "showSubtechniques": false
+                },
+                {
+                        "techniqueID": "T1552",
+                        "tactic": "credential-access",
+                        "color": "",
+                        "comment": "",
+                        "enabled": true,
+                        "metadata": [],
+                        "links": [],
+                        "showSubtechniques": true
+                },
+                {
+                        "techniqueID": "T1552.001",
+                        "tactic": "credential-access",
+                        "color": "#74c476",
+                        "comment": "",
+                        "enabled": true,
+                        "metadata": [],
+                        "links": [],
+                        "showSubtechniques": false
+                },
+                {
+                        "techniqueID": "T1548",
+                        "tactic": "privilege-escalation",
+                        "color": "",
+                        "comment": "",
+                        "enabled": true,
+                        "metadata": [],
+                        "links": [],
+                        "showSubtechniques": true
+                },
+                {
+                        "techniqueID": "T1548.003",
+                        "tactic": "privilege-escalation",
+                        "color": "#74c476",
+                        "comment": "",
+                        "enabled": true,
+                        "metadata": [],
+                        "links": [],
+                        "showSubtechniques": false
+                },
+                {
+                        "techniqueID": "T1548.003",
+                        "tactic": "defense-evasion",
+                        "color": "#74c476",
+                        "comment": "",
+                        "enabled": true,
+                        "metadata": [],
+                        "links": [],
+                        "showSubtechniques": false
+                },
+                {
+                        "techniqueID": "T1087",
+                        "tactic": "discovery",
+                        "color": "",
+                        "comment": "",
+                        "enabled": true,
+                        "metadata": [],
+                        "links": [],
+                        "showSubtechniques": true
+                },
+                {
+                        "techniqueID": "T1087.001",
+                        "tactic": "discovery",
+                        "color": "#74c476",
+                        "comment": "",
+                        "enabled": true,
+                        "metadata": [],
+                        "links": [],
+                        "showSubtechniques": false
+                },
+                {
+                        "techniqueID": "T1204",
+                        "tactic": "execution",
+                        "color": "",
+                        "comment": "",
+                        "enabled": true,
+                        "metadata": [],
+                        "links": [],
+                        "showSubtechniques": true
+                },
+                {
+                        "techniqueID": "T1204.002",
+                        "tactic": "execution",
+                        "color": "#74c476",
+                        "comment": "",
+                        "enabled": true,
+                        "metadata": [],
+                        "links": [],
+                        "showSubtechniques": false
+                },
+                {
+                        "techniqueID": "T1041",
+                        "tactic": "exfiltration",
+                        "color": "#74c476",
+                        "comment": "",
+                        "enabled": true,
+                        "metadata": [],
+                        "links": [],
+                        "showSubtechniques": false
+                },
+                {
+                        "techniqueID": "T1078",
+                        "tactic": "defense-evasion",
+                        "color": "",
+                        "comment": "",
+                        "enabled": true,
+                        "metadata": [],
+                        "links": [],
+                        "showSubtechniques": true
+                },
+                {
+                        "techniqueID": "T1078",
+                        "tactic": "persistence",
+                        "color": "",
+                        "comment": "",
+                        "enabled": true,
+                        "metadata": [],
+                        "links": [],
+                        "showSubtechniques": true
+                },
+                {
+                        "techniqueID": "T1078",
+                        "tactic": "privilege-escalation",
+                        "color": "",
+                        "comment": "",
+                        "enabled": true,
+                        "metadata": [],
+                        "links": [],
+                        "showSubtechniques": true
+                },
+                {
+                        "techniqueID": "T1078",
+                        "tactic": "initial-access",
+                        "color": "",
+                        "comment": "",
+                        "enabled": true,
+                        "metadata": [],
+                        "links": [],
+                        "showSubtechniques": true
+                },
+                {
+                        "techniqueID": "T1078.003",
+                        "tactic": "defense-evasion",
+                        "color": "#74c476",
+                        "comment": "",
+                        "enabled": true,
+                        "metadata": [],
+                        "links": [],
+                        "showSubtechniques": false
+                },
+                {
+                        "techniqueID": "T1078.003",
+                        "tactic": "persistence",
+                        "color": "#74c476",
+                        "comment": "",
+                        "enabled": true,
+                        "metadata": [],
+                        "links": [],
+                        "showSubtechniques": false
+                },
+                {
+                        "techniqueID": "T1078.003",
+                        "tactic": "privilege-escalation",
+                        "color": "#74c476",
+                        "comment": "",
+                        "enabled": true,
+                        "metadata": [],
+                        "links": [],
+                        "showSubtechniques": false
+                },
+                {
+                        "techniqueID": "T1078.003",
+                        "tactic": "initial-access",
+                        "color": "#74c476",
+                        "comment": "",
+                        "enabled": true,
+                        "metadata": [],
+                        "links": [],
+                        "showSubtechniques": false
+                },
+                {
+                        "techniqueID": "T1068",
+                        "tactic": "privilege-escalation",
+                        "color": "#74c476",
+                        "comment": "",
+                        "enabled": true,
+                        "metadata": [],
+                        "links": [],
+                        "showSubtechniques": false
+                },
+                {
+                        "techniqueID": "T1573",
+                        "tactic": "command-and-control",
+                        "color": "",
+                        "comment": "",
+                        "enabled": true,
+                        "metadata": [],
+                        "links": [],
+                        "showSubtechniques": true
+                },
+                {
+                        "techniqueID": "T1573.002",
+                        "tactic": "command-and-control",
+                        "color": "#74c476",
+                        "comment": "",
+                        "enabled": true,
+                        "metadata": [],
+                        "links": [],
+                        "showSubtechniques": false
+                },
+                {
+                        "techniqueID": "T1587",
+                        "tactic": "resource-development",
+                        "color": "",
+                        "comment": "",
+                        "enabled": true,
+                        "metadata": [],
+                        "links": [],
+                        "showSubtechniques": true
+                },
+                {
+                        "techniqueID": "T1587.004",
+                        "tactic": "resource-development",
+                        "color": "#74c476",
+                        "comment": "",
+                        "enabled": true,
+                        "metadata": [],
+                        "links": [],
+                        "showSubtechniques": false
+                },
+                {
+                        "techniqueID": "T1053",
+                        "tactic": "execution",
+                        "color": "",
+                        "comment": "",
+                        "enabled": true,
+                        "metadata": [],
+                        "links": [],
+                        "showSubtechniques": true
+                },
+                {
+                        "techniqueID": "T1053",
+                        "tactic": "privilege-escalation",
+                        "color": "",
+                        "comment": "",
+                        "enabled": true,
+                        "metadata": [],
+                        "links": [],
+                        "showSubtechniques": true
+                },
+                {
+                        "techniqueID": "T1548",
+                        "tactic": "defense-evasion",
+                        "color": "",
+                        "comment": "",
+                        "enabled": true,
+                        "metadata": [],
+                        "links": [],
+                        "showSubtechniques": true
+                }
+        ],
+        "gradient": {
+                "colors": [
+                        "#ff6666ff",
+                        "#ffe766ff",
+                        "#8ec843ff"
+                ],
+                "minValue": 0,
+                "maxValue": 100
+        },
+        "legendItems": [],
+        "metadata": [],
+        "links": [],
+        "showTacticRowBackground": false,
+        "tacticRowBackground": "#dddddd",
+        "selectTechniquesAcrossTactics": true,
+        "selectSubtechniquesWithParent": false
+}
